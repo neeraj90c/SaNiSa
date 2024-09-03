@@ -1,13 +1,13 @@
-<div class="custom-right my-2" *ngIf="EnablePageSize">
-  <label> Show
-    <select name="example_length" (change)="onPageSizeChanged($event)" class="dropdown-toggle" [(ngModel)]="pageSize">
+<div class="custom-right d-flex align-items-center gap-2 my-2" *ngIf="EnablePageSize">
+  <span> Show </span>
+    <select name="example_length" (change)="onPageSizeChanged($event)" class="dropdown-toggle form-select form-select-sm" [(ngModel)]="pageSize">
       <option>10</option>
       <option>25</option>
       <option>50</option>
       <option>100</option>
       <option value=1000>ALL</option>
-    </select> entries
-  </label>
+    </select> 
+    <span> Entries </span>
 </div>
 
 <div class="d-flex mt-2 justify-content-between align-items-center" *ngIf="EnableNavigation">

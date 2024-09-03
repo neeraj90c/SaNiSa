@@ -6,6 +6,7 @@
     width: 260px;
     background: #F8F9FD; 
     transition: all 0.5s ease;
+    border-right: 1px solid #eaeaea;
   }
   .sidebar.close {
     width: 78px;
@@ -77,7 +78,7 @@
     text-decoration: none;
   }
   .sidebar .nav-links li a .link_name {
-    font-size: 16px;
+    font-size: 15px;
     color: #36536B;
     transition: all 0.4s ease;
   }
@@ -159,7 +160,7 @@
     display: flex;
     align-items: center;
     background: #f8f9fd;
-
+    border-bottom: 1px solid #eaeaea;
   }
   
   .home-section .home-content-topbar .text {

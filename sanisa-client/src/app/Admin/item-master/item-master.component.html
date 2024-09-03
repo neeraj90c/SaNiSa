@@ -1,0 +1,86 @@
+<div class="heading">
+    <div>
+        <h5>Manage Products</h5>
+        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae.</p>
+    </div>
+    <div class="btn btn-sm primary-btn" (click)="OpenAddProductModal()">New Product</div>
+</div>
+<div class="tableHeader mb-3 d-flex flex-wrap gap-1 justify-content-between">
+    <app-pagination [EnablePageSize]="true"></app-pagination>
+</div>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-5 g-4">
+    <div class="col">
+        <div class="itemCard">
+            <div class="product-grid text-start">
+                <div class="product-image"><span class="image"><img
+                            src="../../../assets/images/products/Catelogue_240805_234540.pdf-image-049.jpg"
+                            class="pic-1"></span>
+                </div>
+                <div class="product-content"><span class="category"><a>Roasted Crispies</a></span>
+                    <h3 class="title"><a >Sandalwood Saffron Face Wash (35 ML)</a></h3>
+                    <div class="d-flex justify-content-between align-item-center">
+                        <div class="price">₹258.11</div>
+                    </div>
+                </div>
+                <div class="d-flex align-item-center gap-2 p-2">
+                    <button class="btn btn-sm secondary-btn-outline text-success w-100"> <i class="bi bi-pen"></i> Edit </button>
+                    <button class="btn btn-sm secondary-btn-outline text-danger w-100"> <i class="bi bi-trash"></i> Delete </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="itemCard">
+            <div class="product-grid text-start">
+                <div class="product-image"><span class="image"><img
+                            src="../../../assets/images/products/Catelogue_240805_234540.pdf-image-049.jpg"
+                            class="pic-1"></span>
+                </div>
+                <div class="product-content"><span class="category"><a>Roasted Crispies</a></span>
+                    <h3 class="title"><a >Sandalwood Saffron Face Wash (35 ML)</a></h3>
+                    <div class="d-flex justify-content-between align-item-center">
+                        <div class="price">₹258.11</div>
+                    </div>
+                </div>
+                <div class="d-flex align-item-center gap-2 p-2">
+                    <button class="btn btn-sm secondary-btn-outline text-success w-100"> <i class="bi bi-pen"></i> Edit </button>
+                    <button class="btn btn-sm secondary-btn-outline text-danger w-100"> <i class="bi bi-trash"></i> Delete </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<ng-template #addProduct>
+    <div class="modal-header">
+      <h6 class="modal-title font-weight-600">Add New User</h6>
+      <button type="button" class="btn-close" (click)="addProductModal.close()"></button>
+    </div>
+    <div class="modal-body">
+      <div class="form-container">
+        <form >          
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group mb-3">
+                      <label for="firstName" class="form-label">Item Code</label><span class="text-danger h6">*</span>
+                      <input id="firstName" formControlName="firstName" class="form-control form-control-sm" required />                      
+                    </div>
+                </div>
+                  <div class="col-lg-6">
+                    <div class="form-group mb-3">
+                      <label for="firstName" class="form-label">Item Code</label><span class="text-danger h6">*</span>
+                      <input id="firstName" formControlName="firstName" class="form-control form-control-sm" required />                      
+                    </div>
+                  </div>
+            </div>
+        </form>
+        
+      </div>
+    </div>
+    <div class="modal-footer text-end">
+      <button class="btn btn-sm secondary-btn me-2" (click)="addProductModal.close()">Close</button>
+      <button class="btn btn-sm primary-btn">Submit</button>
+    </div>
+  
+  </ng-template>

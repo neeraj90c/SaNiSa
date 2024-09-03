@@ -4,7 +4,7 @@
 
 :root {
   --primary-col: #ff810c;
-  --secondary-col: #36536B;
+  --secondary-col: #45525f;
   --text-col: #303E3D;
   --background-col: #fff;
 }
@@ -22,19 +22,22 @@ body {  margin: 0% !important;  padding: 0% !important;  font-family: "Poppins",
 a {  text-decoration: none !important}
 ul,li {  list-style-type: none}
 .mutedText {  color: #667085;}
-.primary-btn {  background-color: var(--primary-col) !important;  color: #fff !important;  padding: 5px 20px !important;  font-weight: 600 !important;  border-radius: 5px !important;}
+.primary-btn {  background-color: var(--primary-col) !important;  color: #fff !important;  font-weight: 500 !important;  }
 .primary-btn:hover {  border: 1px solid var(--primary-col) !important;  color: var(--primary-col) !important;  background-color: #fff !important;  transition: background-color .3s ease-in;}
-.secondary-btn {  background-color: var(--secondary-col) !important;  color: #fff !important;  padding: 5px 20px !important;  font-weight: 600 !important;  border-radius: 5px !important;}
-.secondary-btn-outline {  background-color: #fff !important;  color: var(--secondary-col) !important;  border: 1px solid var(--secondary-col) !important;  padding: 5px 20px !important;
-  font-weight: 600 !important;  border-radius: 5px !important;}
-.secondary-btn:hover {  border: 1px solid var(--secondary-col) !important;  color: var(--secondary-col) !important;  background-color: #fff !important;  transition: background-color .3s ease-in;}
+.secondary-btn {  background-color: var(--secondary-col) !important;  color: #fff !important;  font-weight: 500 !important;  }
+.secondary-btn-outline {  background-color: #fff !important;  border: 1px solid #dfdfdf !important;  padding: 5px 20px !important;  font-weight: 600 !important;  border-radius: 5px !important;
+}
+.secondary-btn-outline:hover{color: #fff !important; background-color: var(--secondary-col)!important;}
+.secondary-btn:hover {  border: 1px solid var(--secondary-col) !important;  background-color: #fff !important;  transition: background-color .3s ease-in;}
 .font-weight-600 {  font-weight: 600;}
 .form-control:focus,.form-select:focus {  color: var(--bs-body-color);  background-color: var(--bs-body-bg);  border-color: var(--primary-col) !important;  outline: 0;  box-shadow: 0 0 0 .25rem #0d6efd00 !important;}
 .action-btn {  border: 1px solid #C2C2C2 !important;}
 .action-btn:hover {  border: 1px solid #C2C2C2 !important;  background-color: var(--secondary-col) !important;  color: #fff !important;  transition: background-color .3s ease-in;}
 input {  color: #93969c !important;  font-weight: 500 !important;}
-.form-label {  color: var(--secondary-col);  font-weight: 600;  font-size: 15px;}
+.form-label {  color: var(--text-col);  font-weight: 600;  font-size: 15px;}
 input::placeholder, textarea::placeholder {    opacity: 0.5; font-size: 14px;  color: gray !important;}
+.text-danger{color: red;}
+.text-success{color: #066509;}
 
 /* ****************************** Login Container ******************************** */
 .loginBanner {  background-image: url(./assets/images/loginBackground.png);  background-size: 100%;  background-position: center;  animation: zoomEffect 5s infinite alternate ease-in-out;  height: 100%;}
@@ -821,21 +824,6 @@ background-size:100%;
 }
 
 
-/* ******************************* Admin user page***************************** */
-
-.heading{display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #EAECF0;}
-.main-container{margin-top: 10px;}
-.dataTable{width: 100%;}
-.dataTable thead { background-color: #cdd8e0;}
-.dataTable th { border-right: 1.5px solid #e4e5e6; padding: 10px 6px;}
-.dataTable td:last-child, .dataTable th:last-child{ border-right:none}
-.dataTable td {border-right: 1.5px solid #EAECF0; border-top: 1.5px solid #EAECF0; padding: 6px;background-color: white;}
-.dataTableicon i { font-size: 18px;}
-.usericonBox { height: 35px; width: 35px;  border-radius: 50%;  background-color: #FCE7E5;  color: #303E3D;  padding: 8px;  font-weight: 600;  display: flex; justify-content: center;}
-.dataTablesubscription span{  font-weight: 500; border-radius: 11px; padding: 6px 8px;}
-.usersListIcon { height: 35px; width: 35px; border-radius: 50%; background-color: #FCE7E5; color: white; padding: 8px; font-weight: 600;  display: flex;  justify-content: center;
-  align-items: center;  margin-right: -8px; cursor: pointer;}
-.usersListIcon:hover{transform: scale(1.2); transition: all 0.4s ease-in-out;}
 
 
 /* *******************Store*************** */
@@ -1409,3 +1397,21 @@ aside {
      margin: 0 0 30px;
    }
  }
+
+
+
+ /* ******************************* Admin user page***************************** */
+
+.heading{display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #EAECF0;}
+.main-container{margin-top: 10px;}
+.dataTable{width: 100%;}
+.dataTable thead { background-color: #cdd8e0;}
+.dataTable th { border-right: 1.5px solid #e4e5e6; padding: 10px 6px;}
+.dataTable td:last-child, .dataTable th:last-child{ border-right:none}
+.dataTable td {border-right: 1.5px solid #EAECF0; border-top: 1.5px solid #EAECF0; padding: 6px;background-color: white;}
+.dataTableicon i { font-size: 18px;}
+.usericonBox { height: 35px; width: 35px;  border-radius: 50%;  background-color: #FCE7E5;  color: #303E3D;  padding: 8px;  font-weight: 600;  display: flex; justify-content: center;}
+.dataTablesubscription span{  font-weight: 500; border-radius: 11px; padding: 6px 8px;}
+.usersListIcon { height: 35px; width: 35px; border-radius: 50%; background-color: #FCE7E5; color: white; padding: 8px; font-weight: 600;  display: flex;  justify-content: center;
+  align-items: center;  margin-right: -8px; cursor: pointer;}
+.usersListIcon:hover{transform: scale(1.2); transition: all 0.4s ease-in-out;}
