@@ -254,48 +254,9 @@
           </div>
         </div>
       </div>
-        <!-- You can now use your library component in app.component.html -->
-    <ngx-slick-carousel class="carousel" 
-                        #slickModal="slick-carousel" 
-                        [config]="slideConfig" 
-                        (init)="slickInit($event)"
-                        (breakpoint)="breakpoint($event)"
-                        (afterChange)="afterChange($event)"
-                        (beforeChange)="beforeChange($event)">
-        <!-- @for (slide of slides; track slide.img) -->
-         
-           
-              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-6 g-4">
-                <div ngxSlickItem class="slide col" *ngFor="let slide of slides ">
-                    <div class="itemCard">
-                        <div class="product-grid text-start">
-                            <div class="product-image text-center"><span class="image"><img
-                                        src="{{slide.img}}"
-                                        class="pic-1"></span>
-                            </div>
-                            <div class="product-content"><span class="category">Body & Soul</span>
-                                <h3 class="title"><a >Sandalwood Saffron Face Wash (35 ML)</a></h3>
-                                <div class="d-flex justify-content-between align-item-center">
-                                    <div class="price">₹258.11</div>
-                                </div>
-                            </div>
-                            <div class="d-flex align-item-center gap-2 p-2">
-                                <button class="btn btn-sm secondary-btn-outline w-100"> <i class="bi bi-pen"></i> Edit </button>
-                                <button class="btn btn-sm secondary-btn-outline w-100"> <i class="bi bi-trash"></i> Delete </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                  <!-- <img src="{{ slide.img }}" alt="" width="100%"> -->
-            </div>
-           
-        
-    </ngx-slick-carousel>
-    
-    <button (click)="addSlide()">Add</button>
-    <button (click)="removeSlide()">Remove</button>
-    <button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
-    <button (click)="slickModal.unslick()">unslick</button>
+       
+   
+   
    </main> 
    
    

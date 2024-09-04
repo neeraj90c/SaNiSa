@@ -1,0 +1,46 @@
+<div class="heading">
+    <div>
+        <h5>Manage Combo</h5>
+        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae.</p>
+    </div>
+    <div class="btn btn-sm primary-btn" (click)="OpenAddComboModal()">New Product</div>
+</div>
+<div class="tableHeader mb-3 d-flex flex-wrap gap-1 justify-content-between align-item-center">
+    <app-pagination [EnablePageSize]="true"></app-pagination>
+    <div class="d-flex align-items-center gap-2 my-2">
+        <input type="search" class="form-control form-control-sm" placeholder="Search Products....">
+        <select name="example_length"class="dropdown-toggle form-select form-select-sm" placeholder="Brand">           
+            <option>Brand</option>
+            <option>Puro Body & Soul</option>
+            <option>Chakari</option>
+            <option>All Things Yum</option>
+            <option >Chocolate</option>
+          </select> 
+    </div>
+</div>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-6 g-4">
+  
+    <div class="col">
+        <div class="itemCard comboCard">
+            <div class="product-grid text-start">
+                <div class="product-image text-center"><span class="image"><img  src="../../../assets/images/products/Catelogue_240805_234540.pdf-image-030.jpg"
+                            class="pic-1"></span>
+                </div>
+                <div class="product-content">
+                
+                    <h3 class="title"><a >Combo 1</a></h3>
+                    <div class="d-flex justify-content-between align-item-center">
+                        <div class="price">₹258.11</div>
+                    </div>
+                </div>
+                <div class="d-flex align-item-center gap-2 p-2">
+                    <button class="btn btn-sm secondary-btn-outline w-100"> <i class="bi bi-pen"></i> Edit </button>
+                    <button class="btn btn-sm secondary-btn-outline w-100"> <i class="bi bi-trash"></i> Delete </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+

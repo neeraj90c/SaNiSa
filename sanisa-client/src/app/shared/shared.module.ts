@@ -6,7 +6,7 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { PaginationComponent } from './pagination/pagination.component';
 import { MatSliderModule } from '@angular/material/slider';
 import { NgbPopover } from '@ng-bootstrap/ng-bootstrap';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 
 
 
@@ -22,8 +22,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     ReactiveFormsModule,
     MatStepperModule,
     MatSliderModule,
-    NgbPopover,
-    SlickCarouselModule
+    NgbPopover
   ],
   exports: [
     HttpClientModule,
@@ -32,8 +31,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     MatStepperModule,
     PaginationComponent,
     MatSliderModule,
-    NgbPopover,
-    SlickCarouselModule
+    NgbPopover
     
   ]
 })

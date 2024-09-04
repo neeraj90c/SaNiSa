@@ -1416,8 +1416,19 @@ aside {
   align-items: center;  margin-right: -8px; cursor: pointer;}
 .usersListIcon:hover{transform: scale(1.2); transition: all 0.4s ease-in-out;}
 
-
-.itemCard .title{font-size: 16px;}
-.itemCard .category{font-size: 12px;}
+/* *********************** Product Details Admin ************************* */
+.itemCard .title{font-size: 15px;}
+.itemCard .category{font-size: 12px; font-weight: 600;}
 .itemCard  .product-image img{height: 200px; }
 .itemCard .price{color: var(--primary-col); font-size: 14px;}
+.offcanvas-header{align-items:start !important;}
+.viewProductImg{height: 300px; width: 100%;}
+
+
+
+/* *****************Combo Detsils******************* */
+
+.comboCard .product-image img {
+  height: 127px;
+  width: 152px;
+  margin: 22px 0px;}

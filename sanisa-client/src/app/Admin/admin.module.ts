@@ -6,13 +6,15 @@ import { UsersComponent } from './users/users.component';
 import { SharedModule } from '../shared/shared.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ItemMasterComponent } from './item-master/item-master.component';
+import { ComboMasterComponent } from './combo-master/combo-master.component';
 
 
 @NgModule({
   declarations: [
     NavbarComponent,
     UsersComponent,
-    ItemMasterComponent
+    ItemMasterComponent,
+    ComboMasterComponent
   ],
   imports: [
     CommonModule,
