@@ -25,7 +25,7 @@ ul,li {  list-style-type: none}
 .primary-btn {  background-color: var(--primary-col) !important;  color: #fff !important;  font-weight: 500 !important;  }
 .primary-btn:hover {  border: 1px solid var(--primary-col) !important;  color: var(--primary-col) !important;  background-color: #fff !important;  transition: background-color .3s ease-in;}
 .secondary-btn {  background-color: var(--secondary-col) !important;  color: #fff !important;  font-weight: 500 !important;  }
-.secondary-btn-outline {  background-color: hsl(210 40% 96.1% / 1) !important;  border: 1px solid hsl(214.29999999999995 31.8% 91.4% / 1) !important; color: var(--secondary-col) !important;  padding: 5px 20px !important;  font-weight: 600 !important;  border-radius: 5px !important;
+.secondary-btn-outline {  background-color: hsl(210 40% 96.1% / 1) !important;  border: 1px solid hsl(214.29999999999995 31.8% 91.4% / 1) !important; color: var(--secondary-col) !important;  font-weight: 600 !important;  border-radius: 5px !important;
 }
 .secondary-btn-outline:hover{ border-color: var(--text-col) !important; transition: all .3s ease-in;}
 .secondary-btn:hover {  border: 1px solid var(--secondary-col) !important;  background-color: #fff !important;  transition: background-color .3s ease-in;}
@@ -38,6 +38,7 @@ input , .form-select-sm{  color: #666666 !important;  font-weight: 500 !importan
 input::placeholder, textarea::placeholder {   opacity: 0.5; font-size: 14px;  }
 .text-danger{color: red;}
 .text-success{color: #066509;}
+.offcanvas-end { width: 30rem !important;}
 
 /* ****************************** Login Container ******************************** */
 .loginBanner {  background-image: url(./assets/images/loginBackground.png);  background-size: 100%;  background-position: center;  animation: zoomEffect 5s infinite alternate ease-in-out;  height: 100%;}
@@ -1423,12 +1424,24 @@ aside {
 .itemCard .price{color: var(--primary-col); font-size: 14px;}
 .offcanvas-header{align-items:start !important;}
 .viewProductImg{height: 300px; width: 100%;}
+.com-table thead th{background-color: #36536B; color: #fff;}
 
 
 
 /* *****************Combo Detsils******************* */
 
-.comboCard .product-image img {
+/* .comboCard .product-image img {
   height: 127px;
   width: 152px;
-  margin: 22px 0px;}
+  margin: 22px 0px;} */
+    .ellipsis-text {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      /* Number of lines before truncation */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .comboDetailCard img{height: 150px; border-radius: 10px;}
+    .comboItemCard img{height: 100px; width: 100px; border-radius: 10px;}
