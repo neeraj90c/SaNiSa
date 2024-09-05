@@ -39,7 +39,10 @@ input::placeholder, textarea::placeholder {   opacity: 0.5; font-size: 14px;  }
 .text-danger{color: red;}
 .text-success{color: #066509;}
 .offcanvas-end { width: 30rem !important;}
-
+.curserPointer{cursor: pointer;}
+.actionDropdown .dropdown-menu{border-radius: 0%; min-width: 3rem; border: 1px solid #eaeaea;}
+.actionDropdown li{border-bottom: 1px solid #eaeaea;}
+.actionDropdown li .dropdown-item{font-size: 14px; font-weight: 500;}
 /* ****************************** Login Container ******************************** */
 .loginBanner {  background-image: url(./assets/images/loginBackground.png);  background-size: 100%;  background-position: center;  animation: zoomEffect 5s infinite alternate ease-in-out;  height: 100%;}
 .loginSection {  width: 500px;  margin: auto;  padding: 20px;}
@@ -1424,7 +1427,7 @@ aside {
 .itemCard .price{color: var(--primary-col); font-size: 14px;}
 .offcanvas-header{align-items:start !important;}
 .viewProductImg{height: 300px; width: 100%;}
-.com-table thead th{background-color: #36536B; color: #fff;}
+.com-table thead th{background-color: #36536B; color: #fff; font-weight: 600 !important;}
 
 
 

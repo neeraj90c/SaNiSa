@@ -14,7 +14,7 @@ const routes: Routes = [
       { path:'users', component:UsersComponent, title:'Users'},
       { path:'products', component:ItemMasterComponent, title:'Products'},
       { path:'combo', component:ComboMasterComponent, title:'Combo'},
-      { path:'combo-detail', component:ComboDetailComponent, title:'Combo-Detail'}
+      { path:'combo/:id', component:ComboDetailComponent, title:'Combo-Detail'}
     ], title : 'Admin'
   }
 ];
