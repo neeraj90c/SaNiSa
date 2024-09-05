@@ -40,7 +40,8 @@ input::placeholder, textarea::placeholder {   opacity: 0.5; font-size: 14px;  }
 .text-success{color: #066509;}
 .offcanvas-end { width: 30rem !important;}
 .curserPointer{cursor: pointer;}
-.actionDropdown .dropdown-menu{border-radius: 0%; min-width: 3rem; border: 1px solid #eaeaea;}
+.actionDropdown{cursor: pointer;}
+.actionDropdown .dropdown-menu{ min-width: 3rem; border: 1px solid #eaeaea; cursor: pointer;}
 .actionDropdown li{border-bottom: 1px solid #eaeaea;}
 .actionDropdown li .dropdown-item{font-size: 14px; font-weight: 500;}
 /* ****************************** Login Container ******************************** */
@@ -58,7 +59,6 @@ input::placeholder, textarea::placeholder {   opacity: 0.5; font-size: 14px;  }
   0% {
     background-size: 100%;
   }
-
   100% {
     background-size: 110%;
   }
@@ -1446,5 +1446,6 @@ aside {
       text-overflow: ellipsis;
     }
 
-    .comboDetailCard img{height: 150px; border-radius: 10px;}
+    .comboDetailCard{height: 90vh; border-right: 1px solid #eaeaea;}
+    .comboDetailCard img{height: 190px; border-radius: 10px;}
     .comboItemCard img{height: 100px; width: 100px; border-radius: 10px;}

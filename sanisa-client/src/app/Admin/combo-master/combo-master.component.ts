@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, inject, ViewChild } from '@angular/core';
+import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-combo-master',
@@ -6,8 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./combo-master.component.css']
 })
 export class ComboMasterComponent {
+
+
+
+@ViewChild('addCombo', { static: false }) addComboModalContent!: ElementRef;
+
+
+addComboModal!: NgbModalRef;
+
+
+public modalService = inject(NgbModal);
+
 OpenAddComboModal() {
-throw new Error('Method not implemented.');
+this.addComboModal = this.modalService.open(this.addComboModalContent, { size: 'lg' });
 }
 
 }
