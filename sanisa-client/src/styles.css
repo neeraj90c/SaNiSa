@@ -1449,3 +1449,4 @@ aside {
     .comboDetailCard{height: 90vh; border-right: 1px solid #eaeaea;}
     .comboDetailCard img{height: 190px; border-radius: 10px;}
     .comboItemCard img{height: 100px; width: 100px; border-radius: 10px;}
+    .custom-file-upload{cursor: pointer;  border: 1px dashed #eb793e !important;  background: #fff9f5;}

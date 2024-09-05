@@ -7,15 +7,9 @@ import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./combo-master.component.css']
 })
 export class ComboMasterComponent {
-
-
-
 @ViewChild('addCombo', { static: false }) addComboModalContent!: ElementRef;
 
-
 addComboModal!: NgbModalRef;
-
-
 public modalService = inject(NgbModal);
 
 OpenAddComboModal() {

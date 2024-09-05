@@ -34,7 +34,7 @@
   <div class="col-lg-9">
     <div class="d-flex justify-content-between align-item-center my-2">
       <h6 class="font-weight-600 mb-0">Item List</h6>
-      <div class="btn primary-btn btn-sm ">New Item</div>
+      <div class="btn primary-btn btn-sm " (click)="OpenaddComboItemModal()">New Item</div>
     </div>
     <div class="comboItemCard border p-3 mb-3">
       <div class="d-flex ">
@@ -142,3 +142,78 @@
     </div>
   </div>
 </div>
+
+<ng-template #addComboItem>
+  <div class="modal-header">
+    <h6 class="modal-title font-weight-600">Add Combo Item</h6>
+    <button type="button" class="btn-close" (click)="addComboItemModal.close()"></button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="row">
+        <!-- Item Image Upload Section -->
+        <div class="col-md-12">
+          <div class="form-group mb-3">
+            <div class="custom-file-upload text-center p-3">
+              <label class="upload-label" for="cItemImage">
+                <i class="bi bi-cloud-upload" style="font-size: 24px; color: var(--primary-col);"></i>                
+                <span class="d-block mt-2" >Upload Item Image</span> 
+              </label>
+              <input type="file" id="cItemImage" class="form-control form-control-sm" style="display: none;" >
+            </div>
+          </div>
+        </div>
+
+        <!-- Combo Item Name -->
+        <div class="col-md-12">
+          <div class="form-group mb-3">
+            <label for="cItemName">Combo Item Name</label> <span class="text-danger h6">*</span>
+            <input class="form-control form-control-sm" id="cItemName" type="text">
+          </div>
+        </div>
+
+        <!-- Combo ID -->
+        <div class="col-md-12">
+          <div class="form-group mb-3">
+            <label for="cItemId">Combo ID</label> <span class="text-danger h6">*</span>
+            <input class="form-control form-control-sm" id="cItemId" type="text">
+          </div>
+        </div>
+
+        <!-- Combo Price -->
+        <div class="col-md-12 mb-3">
+          <div class="form-group">
+            <label for="cCode">Combo Price</label>
+            <input class="form-control form-control-sm" id="cCode" type="text">
+          </div>
+        </div>
+
+        <!-- Packaging Dropdown -->
+        <div class="col-md-12">
+          <div class="form-group mb-3">
+            <label for="cItempackaging">Packaging</label>
+            <select id="cItempackaging" class="form-select form-select-sm">
+              <option [ngValue]="0">Select Packaging</option>
+              <option [ngValue]="1">Box</option>
+              <option [ngValue]="2">Bag</option>
+              <option [ngValue]="3">Bottle</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Item Description -->
+        <div class="col-md-12">
+          <div class="form-group mb-3">
+            <label for="cItemDesc">Item Description</label>
+            <textarea id="cItemDesc" rows="3" class="form-control form-control-sm"></textarea>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="modal-footer text-end">
+    <button class="btn btn-sm secondary-btn me-2" type="button">Close</button>
+    <button class="btn btn-sm primary-btn" type="submit">Submit</button>
+  </div>
+</ng-template>
