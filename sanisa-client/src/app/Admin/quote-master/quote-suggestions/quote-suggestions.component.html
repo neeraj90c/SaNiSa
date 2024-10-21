@@ -1,5 +1,5 @@
 <app-page-header Heading="Quote Suggestions" [Description]="'Item suggestion list'">
-    <select name="" id="">
+    <select name="" id="" class="form-select form-select-sm">
         <option value="">Events</option>
         <option value="">Events</option>
         <option value="">Events</option>
@@ -11,67 +11,20 @@
 <div class="suggestions">
     <div class="row ">
 
+        
         <div class="col-md-3 mt-3">
-            <div class="card" style="border-radius: 0%;">
+            <div class="card " style="border-radius: 0%;">
                 <div class="card-header">
                     <div class="d-flex justify-content-between ">
-                        <h5 class="mb-0 font-weight-600">Combo 1</h5>
+                        <h5 class="mb-0 font-weight-600">Combo 1
+                            
+                             <span class="editcomboName"><i class="bi bi-pencil"></i></span>
+                        </h5>
                         <h5 class="mb-0 font-weight-600">₹1499</h5>
                     </div>
                 </div>
-    
-    
                 <div class="card-body">
-                    <ul class="p-0">
-                        <li>
-                            <div class="d-flex justify-content-between pb-2 border-bottom mt-2">
-                                <h6 class="mb-0">Combo 1</h6>
-                                <h6 class="mb-0">₹1499</h6>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="d-flex justify-content-between pb-2 border-bottom mt-2">
-                                <h6 class="mb-0">Combo 1</h6>
-                                <h6 class="mb-0">₹1499</h6>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="d-flex justify-content-between pb-2 border-bottom mt-2">
-                                <h6 class="mb-0">Combo 1</h6>
-                                <h6 class="mb-0">₹1499</h6>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="d-flex justify-content-between pb-2 border-bottom mt-2">
-                                <h6 class="mb-0">Combo 1</h6>
-                                <h6 class="mb-0">₹1499</h6>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="d-flex justify-content-between pb-2 border-bottom mt-2">
-                                <h6 class="mb-0">Combo 1</h6>
-                                <h6 class="mb-0">₹1499</h6>
-                            </div>
-                        </li>
-    
-                    </ul>
-    
-                    <a href="#" class="btn btn-primary btn-sm">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 mt-3">
-            <div class="card" style="border-radius: 0%;">
-                <div class="card-header">
-                    <div class="d-flex justify-content-between ">
-                        <h5 class="mb-0 font-weight-600">Combo 1</h5>
-                        <h5 class="mb-0 font-weight-600">₹1499</h5>
-                    </div>
-                </div>
-    
-    
-                <div class="card-body">
-                    <ul class="p-0">
+                    <ul class="p-0 mb-0 comboItemList">
                         <li class="comboList">
                             <div class="d-flex justify-content-between">
                                 <h6 class="mb-0">Combo 1</h6>
@@ -80,19 +33,19 @@
                         </li>
                         <li class="comboList">
                             <div class="d-flex justify-content-between">
-                                <h6 class="mb-0">Combo 1</h6>
+                                <h6 class="mb-0">Combo 2</h6>
                                 <h6 class="mb-0">₹1499</h6>
                             </div>
                         </li>
                         <li class="comboList">
                             <div class="d-flex justify-content-between">
-                                <h6 class="mb-0">Combo 1</h6>
+                                <h6 class="mb-0">Combo 3</h6>
                                 <h6 class="mb-0">₹1499</h6>
                             </div>
                         </li>
                         <li class="comboList">
                             <div class="d-flex justify-content-between">
-                                <h6 class="mb-0">Combo 1</h6>
+                                <h6 class="mb-0">Combo 4</h6>
                                 <h6 class="mb-0">₹1499</h6>
                             </div>
                         </li>
@@ -100,78 +53,96 @@
     
     
                     </ul>
-    
-                    <a href="#" class="btn btn-primary btn-sm">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="col-md-3 mt-3">
-    
-            <div class="card">
-                <h5 class="card-header">Combo 1 - ₹1499/-</h5>
-                <div class="card-body">
-                    <ol>
-                        <li>Item 1 - ₹499/-</li>
-                        <li>Item 1 - ₹499/-</li>
-                        <li>Item 1 - ₹499/-</li>
-                        <li>Item 1 - ₹499/-</li>
-                        <li>Item 1 - ₹499/-</li>
-                    </ol>
-    
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <button class="btn btn-primary btn-sm mt-3">Add To Combo Master</button>
                 </div>
             </div>
         </div>
         <div class="col-md-3 mt-3">
-    
-            <div class="card">
-                <h5 class="card-header">Combo 1 - ₹1499/-</h5>
+            <div class="card " style="border-radius: 0%;">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between ">
+                        <h5 class="mb-0 font-weight-600">Combo 1 <span class="editcomboName"><i class="bi bi-pencil"></i></span></h5>
+                        <h5 class="mb-0 font-weight-600">₹1499</h5>
+                    </div>
+                </div>
                 <div class="card-body">
-                    <ul>
-                        <li>Item 1 - ₹499/-</li>
-                        <li>Item 1 - ₹499/-</li>
-                        <li>Item 1 - ₹499/-</li>
-                        <li>Item 1 - ₹499/-</li>
-                        <li>Item 1 - ₹499/-</li>
-                    </ul>
+                    <ul class="p-0 mb-0 comboItemList">
+                        <li class="comboList">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="mb-0">Combo 1</h6>
+                                <h6 class="mb-0">₹1499</h6>
+                            </div>
+                        </li>
+                        <li class="comboList">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="mb-0">Combo 2</h6>
+                                <h6 class="mb-0">₹1499</h6>
+                            </div>
+                        </li>
+                        <li class="comboList">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="mb-0">Combo 3</h6>
+                                <h6 class="mb-0">₹1499</h6>
+                            </div>
+                        </li>
+                        <li class="comboList">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="mb-0">Combo 4</h6>
+                                <h6 class="mb-0">₹1499</h6>
+                            </div>
+                        </li>
+                        
     
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+    
+                    </ul>
+                    <button class="btn btn-primary btn-sm mt-3">Add To Combo Master</button>
                 </div>
             </div>
         </div>
         <div class="col-md-3 mt-3">
-    
-            <div class="card">
-                <h5 class="card-header">Combo 1 - ₹1499/-</h5>
+            <div class="card " style="border-radius: 0%;">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between ">
+                        <h5 class="mb-0 font-weight-600">Combo 1 <span class="editcomboName"><i class="bi bi-pencil"></i></span></h5>
+                        <h5 class="mb-0 font-weight-600">₹1499</h5>
+                    </div>
+                </div>
                 <div class="card-body">
-                    <ul>
-                        <li>Item 1 - ₹499/-</li>
-                        <li>Item 1 - ₹499/-</li>
-                        <li>Item 1 - ₹499/-</li>
-                        <li>Item 1 - ₹499/-</li>
-                        <li>Item 1 - ₹499/-</li>
-                    </ul>
+                    <ul class="p-0 mb-0 comboItemList">
+                        <li class="comboList">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="mb-0">Combo 1</h6>
+                                <h6 class="mb-0">₹1499</h6>
+                            </div>
+                        </li>
+                        <li class="comboList">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="mb-0">Combo 2</h6>
+                                <h6 class="mb-0">₹1499</h6>
+                            </div>
+                        </li>
+                        <li class="comboList">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="mb-0">Combo 3</h6>
+                                <h6 class="mb-0">₹1499</h6>
+                            </div>
+                        </li>
+                        <li class="comboList">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="mb-0">Combo 4</h6>
+                                <h6 class="mb-0">₹1499</h6>
+                            </div>
+                        </li>
+                        
     
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+    
+                    </ul>
+                    <button class="btn btn-primary btn-sm mt-3">Add To Combo Master</button>
                 </div>
             </div>
         </div>
-        <div class="col-md-3 mt-3">
-    
-            <div class="card">
-                <h5 class="card-header">Combo 1 - ₹1499/-</h5>
-                <div class="card-body">
-                    <ul>
-                        <li>Item 1 - ₹499/-</li>
-                        <li>Item 1 - ₹499/-</li>
-                        <li>Item 1 - ₹499/-</li>
-                        <li>Item 1 - ₹499/-</li>
-                        <li>Item 1 - ₹499/-</li>
-                    </ul>
-    
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div> -->
+      
+       
+   
     </div>
 </div>

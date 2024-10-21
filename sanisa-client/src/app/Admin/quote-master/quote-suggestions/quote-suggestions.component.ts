@@ -10,10 +10,19 @@ export class QuoteSuggestionsComponent {
 
 
   suggestionForm = new FormGroup({
-    eventId : new FormControl(0),
+    eventId: new FormControl(0),
     amount: new FormControl(0),
   })
-  loadList(){
+  loadList() {
 
+  }
+
+  isEdit: boolean = false;
+
+  editForm() {
+    this.isEdit = true;
+  }
+  closeForm() {
+    this.isEdit = false;
   }
 }
