@@ -1,0 +1,9 @@
+.comboList{
+    padding: 14px 5px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    margin: 4px 0px;
+}
+
+.suggestions .card {border: 1px solid #eaeaea !important;}
+.suggestions  .card-header{border-bottom: 1px solid #eaeaea !important; border-radius: 0%; }
