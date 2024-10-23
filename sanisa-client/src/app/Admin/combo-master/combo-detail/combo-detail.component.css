@@ -1,4 +1,4 @@
 .ItemList{width: 100%;}
 .adjustedItemList{width: 75%}
-.adjustedAddItemList{width: 0%}
-.addItemList{width: 25%;}
+.adjustedAddItemList{width: 25%; }
+.addItemList{width: 0%; }
