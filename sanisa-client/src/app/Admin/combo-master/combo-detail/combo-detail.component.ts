@@ -9,11 +9,13 @@ import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 export class ComboDetailComponent {
   @ViewChild('addComboItem', { static: false }) addComboItemModalContent!: ElementRef;
 
+  isExpanded: boolean = false;
   addComboItemModal!: NgbModalRef;
   public modalService = inject(NgbModal);
 
-  OpenaddComboItemModal() {
-    this.addComboItemModal = this.modalService.open(this.addComboItemModalContent,);
-  }
+  // OpenaddComboItemModal() {
+  //   this.addComboItemModal = this.modalService.open(this.addComboItemModalContent,);
+  // }
+  OpenaddComboItemModal(){this.isExpanded = true;}
 
 }
