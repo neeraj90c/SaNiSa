@@ -17,5 +17,5 @@ export class ComboDetailComponent {
   //   this.addComboItemModal = this.modalService.open(this.addComboItemModalContent,);
   // }
   OpenaddComboItemModal(){this.isExpanded = true;}
-
+  CloseaddComboItemModal(){this.isExpanded = false;}
 }

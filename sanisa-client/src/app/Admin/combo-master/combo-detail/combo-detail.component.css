@@ -1,4 +1,9 @@
 .ItemList{width: 100%;}
-.adjustedItemList{width: 75%}
-.adjustedAddItemList{width: 25%; }
-.addItemList{width: 0%; }
+.adjustedItemList{width: 70%}
+.adjustedAddItemList{width: 30%; display: block;}
+.addItemList{width: 0%; display: none;}
+
+.addItemCard{ border: 1px solid #eaeaea;}
+.addItemCard-header{ padding: 10px; border-bottom: 1px solid #eaeaea; display: flex; justify-content: space-between;}
+.addItemCard-body{height: 75vh; padding: 10px; overflow-y: scroll;}
+.addItemCard-footer{border-top: 1px solid #eaeaea; padding: 10px; text-align: end;}

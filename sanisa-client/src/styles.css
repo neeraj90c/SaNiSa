@@ -80,7 +80,7 @@ ul,li {  list-style-type: none}
 input {  color: #93969c !important;  font-weight: 500 !important;}
 .form-label {  color: var(--secondary-col);  font-weight: 600;  font-size: 15px;}
 input::placeholder, textarea::placeholder {    opacity: 0.5; font-size: 14px;  color: gray !important;}
-
+label{margin-bottom: 5px;}
 
 
 ::-webkit-scrollbar {
